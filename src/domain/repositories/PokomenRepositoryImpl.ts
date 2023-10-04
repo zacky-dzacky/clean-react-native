@@ -16,5 +16,9 @@ export class PokemonRepositoryImpl implements PokemonRepository {
         const pokemons = result.map((pockemon: any) => Pokemon.fromJson(pockemon));
         return pokemons;
     }
+
+    async updatePokemon(): Promise<Pokemon>{
+        return Pokemon.fromJson(null)
+    }
     
 }
